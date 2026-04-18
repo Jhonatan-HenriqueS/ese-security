@@ -11,7 +11,7 @@ export function Hero() {
     >
       <div aria-hidden className="absolute inset-0 grid-bg opacity-70" />
 
-      <div className="relative mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-center">
+      <div className="relative mx-auto max-w-5xl px-2 sm:px-6 lg:px-8 text-center">
         <Reveal direction="up" delay={0.1}>
           <h1 className="mt-6 font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1.05] tracking-tight">
             <span className="text-metal">Segurança</span>,{" "}

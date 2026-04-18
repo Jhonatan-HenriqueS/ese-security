@@ -27,8 +27,12 @@ export function Header() {
           : "bg-transparent",
       )}
     >
-      <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-        <a href="#topo" className="flex items-center gap-2.5" aria-label="ESE — Início">
+      <div className="mx-auto max-w-7xl px-7 h-16 flex items-center justify-between">
+        <a
+          href="#topo"
+          className="flex items-center gap-2.5"
+          aria-label="ESE — Início"
+        >
           <Image
             src={logo}
             alt="Logo ESE — Segurança e Rastreamento"
