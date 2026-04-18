@@ -77,7 +77,14 @@ export function Satellite(props: IconProps) {
     <IconBase {...props}>
       <path d="m4 20 4-4" />
       <path d="m6.5 9.5 8 8" />
-      <rect x="8" y="4.5" width="4" height="4" rx="1" transform="rotate(45 10 6.5)" />
+      <rect
+        x="8"
+        y="4.5"
+        width="4"
+        height="4"
+        rx="1"
+        transform="rotate(45 10 6.5)"
+      />
       <path d="M12.5 11.5 16 8" />
       <path d="M15.5 4.5 19 8" />
       <path d="M16 8h4" />

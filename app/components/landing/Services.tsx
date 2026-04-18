@@ -1,5 +1,5 @@
 import { Reveal } from "./Reveal";
-import { Camera, Check, Cpu, Satellite } from "./Icons";
+import { Camera, Check, Cpu, MapPinned } from "./Icons";
 
 const services = [
   {
@@ -16,7 +16,7 @@ const services = [
     ],
   },
   {
-    icon: Satellite,
+    icon: MapPinned,
     tag: "Rastreamento",
     title: "Rastreio em tempo real, sem fronteiras",
     highlight: "cobertura nacional",
@@ -52,17 +52,19 @@ export function Services() {
             Serviços
           </span>
           <h2 className="mt-3 font-display text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight">
-            Soluções <span className="text-metal">completas</span> para proteger você
+            Soluções <span className="text-metal">completas</span> para proteger
+            você
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Câmeras, rastreamento e automação que trabalham juntos para entregar mais
+            Câmeras, rastreamento e automação que trabalham juntos para entregar
+            mais
             <strong className="text-foreground"> segurança</strong>,{" "}
             <strong className="text-foreground">controle</strong> e{" "}
             <strong className="text-foreground">tranquilidade</strong>.
           </p>
         </Reveal>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           {services.map((s, i) => (
             <Reveal key={s.tag} direction="up" delay={i * 0.08}>
               <article className="group relative h-full overflow-hidden rounded-3xl border border-border bg-white p-7 shadow-card transition-all duration-300 hover:scale-[1.015] hover:shadow-card-hover hover:bg-secondary/60">
@@ -86,7 +88,10 @@ export function Services() {
                   </h3>
                   <p className="mt-2 text-sm text-muted-foreground">
                     Tecnologia premium com{" "}
-                    <span className="text-metal font-semibold">{s.highlight}</span>.
+                    <span className="text-metal font-semibold">
+                      {s.highlight}
+                    </span>
+                    .
                   </p>
 
                   <ul className="mt-6 space-y-3">
