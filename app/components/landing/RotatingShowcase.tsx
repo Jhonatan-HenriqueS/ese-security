@@ -28,7 +28,7 @@ const slides: Slide[] = [
     alt: "Portão automatizado moderno com iluminação tecnológica",
     title: "Automações de Serviços",
     description:
-      "Portões, acessos e ambientes integrados ao seu smartphone — praticidade e controle total.",
+      "Portões, acessos e ambientes integrados ao seu smartphone. Praticidade e controle total.",
   },
 ];
 

@@ -43,8 +43,8 @@ export function Benefits() {
             Benefícios
           </span>
           <h2 className="mt-3 font-display text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight">
-            Tudo que sua segurança precisa em{" "}
-            <span className="text-metal">um só lugar</span>
+            Tudo que sua <span className="text-blue-900"> segurança </span>
+            precisa em <span className="text-metal">um só lugar</span>
           </h2>
         </Reveal>
 

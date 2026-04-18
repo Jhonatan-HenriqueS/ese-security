@@ -25,7 +25,8 @@ export function Plan() {
           </span>
           <h2 className="mt-3 font-display text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight">
             Uma solução <span className="text-metal">completa</span> por um
-            valor que cabe no bolso
+            <span className="text-blue-900"> valor</span> que cabe no{" "}
+            <span className="text-blue-900">bolso</span>
           </h2>
         </Reveal>
 
@@ -91,7 +92,7 @@ export function Plan() {
 
               <div className="lg:col-span-3 p-8 sm:p-10 lg:p-12">
                 <h4 className="font-display text-lg font-semibold">
-                  O que está incluso
+                  O que está incluso?
                 </h4>
                 <ul className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3.5">
                   {benefits.map((b) => (

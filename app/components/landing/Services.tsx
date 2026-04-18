@@ -52,7 +52,8 @@ export function Services() {
             Serviços
           </span>
           <h2 className="mt-3 font-display text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight">
-            Soluções <span className="text-metal">completas</span> para proteger
+            Soluções <span className="text-metal">completas</span> para{" "}
+            <span className="text-blue-900">proteger</span> {""}
             você
           </h2>
         </Reveal>
