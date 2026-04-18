@@ -53,8 +53,8 @@ export function RotatingShowcase() {
             Tecnologia <span className="text-metal">visível</span> em ação
           </h2>
           <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
-            Conheça os pilares da ESE: monitoramento por câmeras e automação inteligente —
-            integrados em uma única plataforma.
+            Conheça os pilares da ESE: monitoramento por câmeras e automação
+            inteligente. Integrados em uma única plataforma.
           </p>
         </Reveal>
 
@@ -65,7 +65,10 @@ export function RotatingShowcase() {
                 <div
                   key={active.title}
                   className="absolute inset-0"
-                  style={{ animation: "fadeScale 800ms cubic-bezier(0.22, 1, 0.36, 1) both" }}
+                  style={{
+                    animation:
+                      "fadeScale 800ms cubic-bezier(0.22, 1, 0.36, 1) both",
+                  }}
                 >
                   <Image
                     src={active.image}
@@ -82,7 +85,11 @@ export function RotatingShowcase() {
               </div>
 
               <div className="lg:col-span-2 px-2 sm:px-4 pb-2">
-                <div key={active.title} className="will-change-transform" style={{ animation: "fadeUp 500ms ease-out both" }}>
+                <div
+                  key={active.title}
+                  className="will-change-transform"
+                  style={{ animation: "fadeUp 500ms ease-out both" }}
+                >
                   <span className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
                     ESE Solutions
                   </span>
@@ -94,7 +101,11 @@ export function RotatingShowcase() {
                   </p>
                 </div>
 
-                <div className="mt-6 flex gap-2" role="tablist" aria-label="Indicador de slides">
+                <div
+                  className="mt-6 flex gap-2"
+                  role="tablist"
+                  aria-label="Indicador de slides"
+                >
                   {slides.map((slide, slideIndex) => (
                     <button
                       key={slide.title}
@@ -110,7 +121,11 @@ export function RotatingShowcase() {
                         className="absolute inset-y-0 left-0 bg-[image:var(--gradient-metal)] rounded-full"
                         style={{
                           width:
-                            slideIndex === index ? "100%" : slideIndex < index ? "100%" : "0%",
+                            slideIndex === index
+                              ? "100%"
+                              : slideIndex < index
+                                ? "100%"
+                                : "0%",
                           animation:
                             slideIndex === index
                               ? `slideFill ${SLIDE_MS}ms linear forwards`

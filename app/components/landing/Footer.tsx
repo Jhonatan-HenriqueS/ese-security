@@ -21,8 +21,9 @@ export function Footer() {
               />
             </div>
             <p className="mt-5 text-white/75 text-sm leading-relaxed max-w-sm">
-              A ESE entrega tecnologia, segurança e controle inteligente para residências, empresas
-              e frotas — com instalação profissional e suporte dedicado.
+              A ESE entrega tecnologia, segurança e controle inteligente para
+              residências, empresas e frotas, com instalação profissional e
+              suporte dedicado.
             </p>
           </div>
 
@@ -69,7 +70,10 @@ export function Footer() {
         </div>
 
         <div className="mt-12 pt-6 border-t border-white/15 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/60">
-          <p>© {new Date().getFullYear()} ESE — Segurança, Rastreamento e Automação.</p>
+          <p>
+            © {new Date().getFullYear()} ESE — Segurança, Rastreamento e
+            Automação.
+          </p>
           <p>Todos os direitos reservados.</p>
         </div>
       </div>

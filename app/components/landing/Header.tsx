@@ -27,7 +27,7 @@ export function Header() {
           : "bg-transparent",
       )}
     >
-      <div className="mx-auto max-w-7xl px-7 h-16 flex items-center justify-between">
+      <div className="mx-auto max-w-7xl px-6 h-16 flex items-center justify-between">
         <a
           href="#topo"
           className="flex items-center gap-2.5"

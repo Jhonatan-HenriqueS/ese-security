@@ -24,7 +24,8 @@ export function Plan() {
             Plano ESE
           </span>
           <h2 className="mt-3 font-display text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight">
-            Uma solução <span className="text-metal">completa</span> por um valor que cabe no bolso
+            Uma solução <span className="text-metal">completa</span> por um
+            valor que cabe no bolso
           </h2>
         </Reveal>
 
@@ -39,7 +40,10 @@ export function Plan() {
             <div className="relative grid grid-cols-1 lg:grid-cols-5 gap-0">
               <div className="lg:col-span-2 p-8 sm:p-10 lg:p-12 border-b lg:border-b-0 lg:border-r border-border bg-secondary/40">
                 <span className="inline-flex items-center gap-2 rounded-full bg-white border border-border px-3 py-1 text-xs font-medium text-muted-foreground shadow-card">
-                  <Sparkles className="h-3.5 w-3.5 text-[var(--graphite)]" aria-hidden />
+                  <Sparkles
+                    className="h-3.5 w-3.5 text-[var(--graphite)]"
+                    aria-hidden
+                  />
                   Plano Inteligente
                 </span>
 
@@ -47,19 +51,24 @@ export function Plan() {
                   Monitoramento + Rastreamento + Automação
                 </h3>
                 <p className="mt-2 text-sm text-muted-foreground">
-                  Tudo o que você precisa para proteger sua família, sua empresa e seu patrimônio.
+                  Tudo o que você precisa para proteger sua família, sua empresa
+                  e seu patrimônio.
                 </p>
 
                 <div className="mt-8">
                   <div className="flex items-end gap-2">
-                    <span className="text-sm text-muted-foreground mb-2">R$</span>
+                    <span className="text-sm text-muted-foreground mb-2">
+                      R$
+                    </span>
                     <span className="font-display text-6xl sm:text-7xl font-semibold tracking-tight text-metal leading-none">
                       99,90
                     </span>
-                    <span className="text-sm text-muted-foreground mb-2">/mês</span>
+                    <span className="text-sm text-muted-foreground mb-2">
+                      /mês
+                    </span>
                   </div>
                   <p className="mt-2 text-xs text-muted-foreground">
-                    Sem complicação — ative em poucos passos.
+                    Sem complicação, ative em poucos passos.
                   </p>
                 </div>
 
@@ -81,7 +90,9 @@ export function Plan() {
               </div>
 
               <div className="lg:col-span-3 p-8 sm:p-10 lg:p-12">
-                <h4 className="font-display text-lg font-semibold">O que está incluso</h4>
+                <h4 className="font-display text-lg font-semibold">
+                  O que está incluso
+                </h4>
                 <ul className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3.5">
                   {benefits.map((b) => (
                     <li key={b} className="flex items-start gap-3 text-sm">

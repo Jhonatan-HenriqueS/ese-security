@@ -55,13 +55,6 @@ export function Services() {
             Soluções <span className="text-metal">completas</span> para proteger
             você
           </h2>
-          <p className="mt-4 text-muted-foreground">
-            Câmeras, rastreamento e automação que trabalham juntos para entregar
-            mais
-            <strong className="text-foreground"> segurança</strong>,{" "}
-            <strong className="text-foreground">controle</strong> e{" "}
-            <strong className="text-foreground">tranquilidade</strong>.
-          </p>
         </Reveal>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
