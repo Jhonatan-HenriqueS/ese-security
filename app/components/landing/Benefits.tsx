@@ -1,5 +1,15 @@
 import { Reveal } from "./Reveal";
-import { Camera, Cpu, CloudUpload, DoorOpen, MapPinned, Siren } from "./Icons";
+import {
+  Camera,
+  Cpu,
+  CloudUpload,
+  DoorOpen,
+  MapPinned,
+  Siren,
+  Smartphone,
+  BellRing,
+  Aperture,
+} from "./Icons";
 
 const items = [
   {
@@ -8,9 +18,14 @@ const items = [
     desc: "Monitoramento em tempo real, histórico de rotas, alta precisão e cobertura nacional.",
   },
   {
-    icon: MapPinned,
-    title: "Cerca virtual inteligente",
-    desc: "Delimite áreas e receba avisos instantâneos de entrada e saída.",
+    icon: Smartphone,
+    title: "Plataforma + aplicativo",
+    desc: "Painel web, acesso mobile, notificações e gestão simplificada da sua frota e de suas câmeras.",
+  },
+  {
+    icon: BellRing,
+    title: "Relatórios e alertas",
+    desc: "Acompanhamento inteligente com relatórios detalhados e alertas personalizados.",
   },
   {
     icon: Camera,
@@ -23,14 +38,9 @@ const items = [
     desc: "Gravações seguras e acesso rápido às evidências quando você precisar.",
   },
   {
-    icon: DoorOpen,
-    title: "Automação de acessos",
-    desc: "Portões, acessos e ambientes automatizados com mais praticidade.",
-  },
-  {
-    icon: Siren,
-    title: "Alarmes, cercas e sensores",
-    desc: "Proteção perimetral, detecção de movimento e reforço de segurança.",
+    icon: Aperture,
+    title: "Câmeras 360°",
+    desc: "Cobertura ampla com redução real de pontos cegos.",
   },
 ];
 

@@ -3,7 +3,7 @@
 import Image, { type StaticImageData } from "next/image";
 import { useEffect, useState } from "react";
 import camera from "@/assets/camera-seguranca.jpg";
-import automacao from "@/assets/automacao-servicos.jpg";
+import rastreamento from "@/assets/rastreamento.webp";
 import { Reveal } from "./Reveal";
 
 const SLIDE_MS = 3000;
@@ -24,11 +24,11 @@ const slides: Slide[] = [
       "Videovigilância em alta definição, com acesso remoto pelo aplicativo e armazenamento em nuvem.",
   },
   {
-    image: automacao,
-    alt: "Portão automatizado moderno com iluminação tecnológica",
-    title: "Automações de Serviços",
+    image: rastreamento,
+    alt: "Cidade noturna com vários prédios e uma ilustração de vários pontos marcados no mapa representando o rastreamento",
+    title: "Rastreamento inteligente",
     description:
-      "Portões, acessos e ambientes integrados ao seu smartphone. Praticidade e controle total.",
+      "Tenha total controle via satélite com nosso sistema de rastreamento via aplicativo. Tenha controle na palma da mão.",
   },
 ];
 

@@ -13,12 +13,13 @@ const services = [
       "Câmeras 360° com cobertura ampla",
       "Armazenamento em nuvem",
       "Ideal para residências, empresas, garagens, pátios e frotas",
+      "Aplicativo próprio para monitoramento.",
     ],
   },
   {
     icon: MapPinned,
     tag: "Rastreamento",
-    title: "Rastreio em tempo real, sem fronteiras",
+    title: "Rastreio em tempo real",
     highlight: "cobertura nacional",
     items: [
       "Rastreamento via chip e satelital",
@@ -26,19 +27,20 @@ const services = [
       "Histórico completo de percurso",
       "Alertas de velocidade e desvio de rota",
       "Veículos leves, pesados, motos e máquinas agrícolas",
+      "Aplicativo próprio para visualizar localização.",
     ],
   },
   {
     icon: Cpu,
-    tag: "Automação & Segurança",
+    tag: "Rastreamento & Segurança",
     title: "Controle inteligente da palma da mão",
     highlight: "instalação especializada",
     items: [
-      "Automação de portões, acessos e ambientes",
       "Integração com app e smartphone",
-      "Alarmes e sensores de presença",
-      "Cercas elétricas com proteção perimetral",
+      "Aplciativo próprio e profissional para cada serviço",
       "Projeto e instalação por equipe especializada",
+      "Suporte técnico dedicado",
+      "Tenha controle total, monitore e proteja o que mais importa",
     ],
   },
 ];
@@ -93,7 +95,7 @@ export function Services() {
                   <h3 className="mt-5 font-display text-2xl font-semibold leading-tight">
                     {s.title}
                   </h3>
-                  <p className="mt-2 text-sm text-muted-foreground">
+                  <p className="mt-3 text-sm text-muted-foreground">
                     Tecnologia premium com{" "}
                     <span className="text-metal font-semibold">
                       {s.highlight}

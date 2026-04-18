@@ -26,15 +26,14 @@ export function Hero() {
               <span className="text-metal">tecnologia</span>
               <br className="hidden sm:block" /> que{" "}
               <span className="text-blue-900"> protegem</span> o que mais{" "}
-              <span className="text-blue-900"> importa.</span>
+              <span className="text-blue-900"> importa</span>
             </h1>
           </header>
         </Reveal>
 
         <Reveal direction="up" delay={0.2}>
           <p className="mt-10 mx-auto max-w-2xl text-base sm:text-lg text-muted-foreground">
-            Monitoramento, rastreamento e automação reunidos em uma única
-            solução. Ideal para{" "}
+            Monitoramento e rastreamento inteligente. Ideal para{" "}
             <strong className="text-foreground">veículos</strong>,{" "}
             <strong className="text-foreground">empresas</strong> e{" "}
             <strong className="text-foreground">residências</strong>.

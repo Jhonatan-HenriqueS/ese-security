@@ -8,7 +8,6 @@ const benefits = [
   "Rastreamento via chip e satelital com cobertura nacional",
   "Plataforma web + aplicativo mobile",
   "Localização em tempo real e histórico de rotas",
-  "Cerca virtual inteligente",
   "Alertas de velocidade, desvio e movimentação",
   "Suporte técnico especializado",
   "Integração com câmeras e automações ESE",
@@ -56,9 +55,9 @@ export function Plan() {
                 </span>
 
                 <h3 className="mt-5 font-display text-2xl font-semibold">
-                  Monitoramento + Rastreamento + Automação
+                  Monitoramento + Rastreamento
                 </h3>
-                <p className="mt-2 text-sm text-muted-foreground">
+                <p className="mt-8 text-sm text-muted-foreground">
                   Tudo o que você precisa para proteger sua família, sua empresa
                   e seu patrimônio.
                 </p>
