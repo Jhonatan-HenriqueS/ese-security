@@ -28,10 +28,10 @@ export function CTAButton({
     href.startsWith("tel:");
 
   const base =
-    "inline-flex items-center justify-center gap-2 rounded-full font-medium transition-all duration-300 will-change-transform hover:scale-[1.03] active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--primary)]";
+    "flex items-center justify-center gap-2 rounded-full font-medium transition-all duration-300 will-change-transform hover:scale-[1.03] active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--primary)]";
   const sizes = {
-    md: "h-11 px-6 text-sm",
-    lg: "h-14 px-8 text-base",
+    md: "h-11 px-5 text-sm",
+    lg: "h-14 px-7 text-base",
   } as const;
   const variants = {
     primary:
@@ -53,7 +53,7 @@ export function CTAButton({
       aria-label={ariaLabel}
       className={cn(base, sizes[size], variants[variant], className)}
     >
-      <span>{children}</span>
+      <span className="inline-flex items-center gap-2">{children}</span>
       {Icon ? <Icon className="h-4 w-4" aria-hidden /> : null}
     </a>
   );

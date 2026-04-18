@@ -46,10 +46,16 @@ export function RotatingShowcase() {
   const active = slides[index];
 
   return (
-    <section className="relative py-20 md:py-28 bg-soft">
+    <section
+      aria-labelledby="showcase-heading"
+      className="relative py-20 md:py-28 bg-soft"
+    >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <Reveal direction="up" className="text-center mb-12">
-          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight">
+          <h2
+            id="showcase-heading"
+            className="font-display text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight"
+          >
             Tecnologia <span className="text-metal">visível</span> em ação
           </h2>
           <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
@@ -60,7 +66,7 @@ export function RotatingShowcase() {
 
         <Reveal direction="up" delay={0.1}>
           <div className="rounded-3xl bg-secondary/70 p-3 sm:p-5 shadow-card border border-border">
-            <div className="grid grid-cols-1 lg:grid-cols-5 gap-5 lg:gap-8 items-center">
+            <figure className="grid grid-cols-1 lg:grid-cols-5 gap-5 lg:gap-8 items-center">
               <div className="lg:col-span-3 relative aspect-[16/10] overflow-hidden rounded-2xl bg-muted">
                 <div
                   key={active.title}
@@ -84,7 +90,7 @@ export function RotatingShowcase() {
                 />
               </div>
 
-              <div className="lg:col-span-2 px-2 sm:px-4 pb-2">
+              <figcaption className="lg:col-span-2 px-2 sm:px-4 pb-2">
                 <div
                   key={active.title}
                   className="will-change-transform"
@@ -135,8 +141,8 @@ export function RotatingShowcase() {
                     </button>
                   ))}
                 </div>
-              </div>
-            </div>
+              </figcaption>
+            </figure>
           </div>
         </Reveal>
       </div>

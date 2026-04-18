@@ -1,5 +1,7 @@
 import Image from "next/image";
 import logo from "@/assets/ese-logo.png";
+import MsgLogo from "@/assets/msgLogo.svg";
+
 import { CTAButton } from "./CTAButton";
 import { ShieldCheck } from "./Icons";
 
@@ -10,7 +12,7 @@ export function Footer() {
     <footer className="relative bg-[image:var(--gradient-metal)] text-white">
       <div className="mx-auto max-w-7xl px-8 sm:px-6 lg:px-8 py-14 md:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-start">
-          <div>
+          <section aria-label="Sobre a ESE">
             <div className="flex items-center gap-3">
               <Image
                 src={logo}
@@ -25,12 +27,15 @@ export function Footer() {
               residências, empresas e frotas, com instalação profissional e
               suporte dedicado.
             </p>
-          </div>
+          </section>
 
-          <div>
-            <h3 className="font-display text-base font-semibold text-white/90">
+          <section aria-labelledby="footer-trust-heading">
+            <h2
+              id="footer-trust-heading"
+              className="font-display text-base font-semibold text-white/90"
+            >
               Autoridade e confiança
-            </h3>
+            </h2>
             <ul className="mt-4 space-y-3 text-sm text-white/75">
               <li className="flex items-center gap-2">
                 <ShieldCheck className="h-4 w-4 text-white/80" aria-hidden />
@@ -45,12 +50,12 @@ export function Footer() {
                 Atendimento próximo, humano e ágil
               </li>
             </ul>
-          </div>
+          </section>
 
-          <div className="lg:justify-self-end w-full lg:max-w-xs">
-            <h3 className="font-display text-base font-semibold text-white/90">
+          <address className="lg:justify-self-end w-full lg:max-w-xs not-italic">
+            <h2 className="font-display text-base font-semibold text-white/90">
               Pronto para proteger o que é seu?
-            </h3>
+            </h2>
             <p className="mt-3 text-sm text-white/70">
               Fale com nossa equipe agora mesmo pelo WhatsApp.
             </p>
@@ -59,14 +64,20 @@ export function Footer() {
                 href={WHATSAPP_URL}
                 variant="whatsapp"
                 size="lg"
-                icon="whatsapp"
                 className="w-full"
                 ariaLabel="Falar com a ESE no WhatsApp"
               >
+                <Image
+                  src={MsgLogo}
+                  alt="WhatsApp Logo"
+                  width={1}
+                  height={1}
+                  className="h-10 w-10 shrink-0 object-contain"
+                />{" "}
                 Fale conosco
               </CTAButton>
             </div>
-          </div>
+          </address>
         </div>
 
         <div className="mt-12 pt-6 border-t border-white/15 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/60">

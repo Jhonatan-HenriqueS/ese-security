@@ -17,13 +17,20 @@ const benefits = [
 
 export function Plan() {
   return (
-    <section id="planos" className="relative py-20 md:py-28 bg-hero">
+    <section
+      id="planos"
+      aria-labelledby="plan-heading"
+      className="relative py-20 md:py-28 bg-hero"
+    >
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         <Reveal direction="up" className="text-center max-w-2xl mx-auto mb-12">
           <span className="text-xs uppercase tracking-[0.22em] text-muted-foreground">
             Plano ESE
           </span>
-          <h2 className="mt-3 font-display text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight">
+          <h2
+            id="plan-heading"
+            className="mt-3 font-display text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight"
+          >
             Uma solução <span className="text-metal">completa</span> por um
             <span className="text-blue-900"> valor</span> que cabe no{" "}
             <span className="text-blue-900">bolso</span>
@@ -31,7 +38,7 @@ export function Plan() {
         </Reveal>
 
         <Reveal direction="up" delay={0.1}>
-          <div className="relative overflow-hidden rounded-3xl border border-border bg-white shadow-card-hover">
+          <article className="relative overflow-hidden rounded-3xl border border-border bg-white shadow-card-hover">
             <div
               aria-hidden
               className="absolute -top-32 -right-32 h-80 w-80 rounded-full opacity-30 blur-3xl"
@@ -39,7 +46,7 @@ export function Plan() {
             />
 
             <div className="relative grid grid-cols-1 lg:grid-cols-5 gap-0">
-              <div className="lg:col-span-2 p-8 sm:p-10 lg:p-12 border-b lg:border-b-0 lg:border-r border-border bg-secondary/40">
+              <header className="lg:col-span-2 p-8 sm:p-10 lg:p-12 border-b lg:border-b-0 lg:border-r border-border bg-secondary/40">
                 <span className="inline-flex items-center gap-2 rounded-full bg-white border border-border px-3 py-1 text-xs font-medium text-muted-foreground shadow-card">
                   <Sparkles
                     className="h-3.5 w-3.5 text-[var(--graphite)]"
@@ -88,12 +95,18 @@ export function Plan() {
                     Atendimento humano via WhatsApp
                   </p>
                 </div>
-              </div>
+              </header>
 
-              <div className="lg:col-span-3 p-8 sm:p-10 lg:p-12">
-                <h4 className="font-display text-lg font-semibold">
+              <section
+                aria-labelledby="plan-includes-heading"
+                className="lg:col-span-3 p-8 sm:p-10 lg:p-12"
+              >
+                <h3
+                  id="plan-includes-heading"
+                  className="font-display text-lg font-semibold"
+                >
                   O que está incluso?
-                </h4>
+                </h3>
                 <ul className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3.5">
                   {benefits.map((b) => (
                     <li key={b} className="flex items-start gap-3 text-sm">
@@ -104,9 +117,9 @@ export function Plan() {
                     </li>
                   ))}
                 </ul>
-              </div>
+              </section>
             </div>
-          </div>
+          </article>
         </Reveal>
       </div>
     </section>

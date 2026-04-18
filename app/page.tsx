@@ -82,19 +82,16 @@ export default function HomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-
-      <div className="min-h-screen bg-background text-foreground">
-        <Header />
-        <main>
-          <Hero />
-          <RotatingShowcase />
-          <Banner />
-          <Benefits />
-          <Services />
-          <Plan />
-        </main>
-        <Footer />
-      </div>
+      <Header />
+      <main id="conteudo-principal" className="flex-1">
+        <Hero />
+        <RotatingShowcase />
+        <Banner />
+        <Benefits />
+        <Services />
+        <Plan />
+      </main>
+      <Footer />
     </>
   );
 }

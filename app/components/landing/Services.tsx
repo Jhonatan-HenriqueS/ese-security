@@ -45,22 +45,35 @@ const services = [
 
 export function Services() {
   return (
-    <section id="servicos" className="relative py-20 md:py-28 bg-soft">
+    <section
+      id="servicos"
+      aria-labelledby="services-heading"
+      className="relative py-20 md:py-28 bg-soft"
+    >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal direction="up" className="text-center max-w-2xl mx-auto mb-14">
           <span className="text-xs uppercase tracking-[0.22em] text-muted-foreground">
             Serviços
           </span>
-          <h2 className="mt-3 font-display text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight">
+          <h2
+            id="services-heading"
+            className="mt-3 font-display text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight"
+          >
             Soluções <span className="text-metal">completas</span> para{" "}
             <span className="text-blue-900">proteger</span> {""}
             você
           </h2>
         </Reveal>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+        <ul className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           {services.map((s, i) => (
-            <Reveal key={s.tag} direction="up" delay={i * 0.08}>
+            <Reveal
+              as="li"
+              key={s.tag}
+              direction="up"
+              delay={i * 0.08}
+              className="h-full list-none"
+            >
               <article className="group relative h-full overflow-hidden rounded-3xl border border-border bg-white p-7 shadow-card transition-all duration-300 hover:scale-[1.015] hover:shadow-card-hover hover:bg-secondary/60">
                 <div
                   aria-hidden
@@ -102,7 +115,7 @@ export function Services() {
               </article>
             </Reveal>
           ))}
-        </div>
+        </ul>
       </div>
     </section>
   );

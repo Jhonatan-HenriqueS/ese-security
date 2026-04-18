@@ -7,6 +7,7 @@ type Direction = "up" | "left" | "right" | "fade";
 
 interface RevealProps {
   children: ReactNode;
+  as?: "div" | "li";
   direction?: Direction;
   delay?: number;
   className?: string;
@@ -19,12 +20,19 @@ const hiddenStates: Record<Direction, string> = {
   fade: "",
 };
 
-export function Reveal({ children, direction = "up", delay = 0, className }: RevealProps) {
-  const ref = useRef<HTMLDivElement | null>(null);
+export function Reveal({
+  children,
+  as = "div",
+  direction = "up",
+  delay = 0,
+  className,
+}: RevealProps) {
+  const divRef = useRef<HTMLDivElement | null>(null);
+  const liRef = useRef<HTMLLIElement | null>(null);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const element = ref.current;
+    const element = as === "li" ? liRef.current : divRef.current;
 
     if (!element) {
       return;
@@ -45,18 +53,25 @@ export function Reveal({ children, direction = "up", delay = 0, className }: Rev
     observer.observe(element);
 
     return () => observer.disconnect();
-  }, []);
+  }, [as]);
+
+  const revealClassName = cn(
+    "transition duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] will-change-transform",
+    isVisible ? "translate-x-0 translate-y-0 opacity-100" : `opacity-0 ${hiddenStates[direction]}`,
+    className,
+  );
+  const revealStyle = { transitionDelay: `${delay}s` };
+
+  if (as === "li") {
+    return (
+      <li ref={liRef} className={revealClassName} style={revealStyle}>
+        {children}
+      </li>
+    );
+  }
 
   return (
-    <div
-      ref={ref}
-      className={cn(
-        "transition duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] will-change-transform",
-        isVisible ? "translate-x-0 translate-y-0 opacity-100" : `opacity-0 ${hiddenStates[direction]}`,
-        className,
-      )}
-      style={{ transitionDelay: `${delay}s` }}
-    >
+    <div ref={divRef} className={revealClassName} style={revealStyle}>
       {children}
     </div>
   );

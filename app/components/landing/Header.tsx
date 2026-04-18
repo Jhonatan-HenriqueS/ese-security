@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import logo from "@/assets/ese-logo.png";
-import { MessageCircle } from "./Icons";
+import MsgLogo from "@/assets/msgLogo.svg";
 import { cn } from "@/lib/utils";
 
 const WHATSAPP_URL = "https://wa.me/5569993897171";
@@ -27,7 +27,10 @@ export function Header() {
           : "bg-transparent",
       )}
     >
-      <div className="mx-auto max-w-7xl px-7 h-16 flex items-center justify-between">
+      <nav
+        aria-label="Navegação principal"
+        className="mx-auto max-w-7xl px-7 h-16 flex items-center justify-between"
+      >
         <a
           href="#topo"
           className="flex items-center gap-2.5"
@@ -49,11 +52,17 @@ export function Header() {
           className="inline-flex items-center gap-2 rounded-full bg-[var(--whatsapp)] text-[var(--whatsapp-foreground)] px-4 sm:px-5 h-10 text-sm font-medium shadow-whatsapp hover:scale-[1.03] active:scale-[0.98] transition-transform"
           aria-label="Falar com a ESE no WhatsApp"
         >
-          <MessageCircle className="h-4 w-4" aria-hidden />
+          <Image
+            src={MsgLogo}
+            alt="WhatsApp Logo"
+            width={1}
+            height={1}
+            className="h-10 w-10 shrink-0 object-contain"
+          />
           <span className="hidden sm:inline">WhatsApp</span>
           <span className="sm:hidden">Fale conosco</span>
         </a>
-      </div>
+      </nav>
     </header>
   );
 }

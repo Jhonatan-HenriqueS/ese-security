@@ -36,24 +36,33 @@ const items = [
 
 export function Benefits() {
   return (
-    <section id="beneficios" className="relative py-20 md:py-28">
+    <section
+      id="beneficios"
+      aria-labelledby="benefits-heading"
+      className="relative py-20 md:py-28"
+    >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal direction="up" className="text-center max-w-2xl mx-auto mb-14">
           <span className="text-xs uppercase tracking-[0.22em] text-muted-foreground">
             Benefícios
           </span>
-          <h2 className="mt-3 font-display text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight">
+          <h2
+            id="benefits-heading"
+            className="mt-3 font-display text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight"
+          >
             Tudo que sua <span className="text-blue-900"> segurança </span>
             precisa em <span className="text-metal">um só lugar</span>
           </h2>
         </Reveal>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {items.map((it, i) => (
             <Reveal
+              as="li"
               key={it.title}
               direction={i % 2 === 0 ? "left" : "right"}
               delay={i * 0.04}
+              className="h-full list-none"
             >
               <article className="group h-full rounded-2xl border border-border bg-white p-6 shadow-card transition-all duration-300 hover:scale-[1.025] hover:shadow-card-hover hover:bg-secondary/60">
                 <div className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-[image:var(--gradient-metal)] text-primary-foreground shadow-mirror">
@@ -68,7 +77,7 @@ export function Benefits() {
               </article>
             </Reveal>
           ))}
-        </div>
+        </ul>
       </div>
     </section>
   );
