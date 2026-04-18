@@ -63,7 +63,7 @@ export function Plan() {
                   e seu patrimônio.
                 </p>
 
-                <div className="mt-8">
+                {/* comentário  <div className="mt-8">
                   <div className="flex items-end gap-2">
                     <span className="text-sm text-muted-foreground mb-2">
                       R$
@@ -79,6 +79,7 @@ export function Plan() {
                     Sem complicação, ative em poucos passos.
                   </p>
                 </div>
+              */}
 
                 <div className="mt-8">
                   <CTAButton
