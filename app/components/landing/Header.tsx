@@ -21,15 +21,15 @@ export function Header() {
   return (
     <header
       className={cn(
-        "fixed top-0 inset-x-0 z-50 transition-all duration-300",
+        "fixed top-0 inset-x-0 z-50 h-16 min-h-16 overflow-visible [transform:translateZ(0)] [backface-visibility:hidden] transition-[background-color,border-color,box-shadow] duration-300",
         scrolled
-          ? "bg-white/70 backdrop-blur-xl border-b border-border/60 shadow-[0_1px_0_0_color-mix(in_oklab,var(--primary)_8%,transparent)]"
+          ? "bg-white/92 border-b border-border/60 shadow-[0_1px_0_0_color-mix(in_oklab,var(--primary)_8%,transparent)] md:bg-white/70 md:backdrop-blur-xl"
           : "bg-transparent",
       )}
     >
       <nav
         aria-label="Navegação principal"
-        className="mx-auto max-w-7xl px-7 h-16 flex items-center justify-between"
+        className="mx-auto flex h-full max-w-7xl items-center justify-between px-7"
       >
         <a
           href="#topo"
