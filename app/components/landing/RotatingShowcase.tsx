@@ -59,8 +59,8 @@ export function RotatingShowcase() {
             Tecnologia <span className="text-metal">visível</span> em ação
           </h2>
           <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
-            Conheça os pilares da ESE: monitoramento por câmeras e automação
-            inteligente. Integrados em uma única plataforma.
+            Conheça os pilares da ESE: monitoramento por câmeras e rastreamento
+            inteligente. Tenha acesso ao seu sistema em qualquer lugar.
           </p>
         </Reveal>
 
