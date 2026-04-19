@@ -1,15 +1,5 @@
 import { Reveal } from "./Reveal";
-import {
-  Camera,
-  Cpu,
-  CloudUpload,
-  DoorOpen,
-  MapPinned,
-  Siren,
-  Smartphone,
-  BellRing,
-  Aperture,
-} from "./Icons";
+import { Camera, Cpu, CloudUpload, Smartphone, BellRing, Radar } from "./Icons";
 
 const items = [
   {
@@ -25,7 +15,7 @@ const items = [
   {
     icon: BellRing,
     title: "Relatórios e alertas",
-    desc: "Acompanhamento inteligente com relatórios detalhados e alertas personalizados.",
+    desc: "Acompanhamento inteligente com relatórios detalhando trajetos, velocidade, paradas e entre diversas funcionalidades.",
   },
   {
     icon: Camera,
@@ -38,7 +28,7 @@ const items = [
     desc: "Gravações seguras e acesso rápido às evidências quando você precisar.",
   },
   {
-    icon: Aperture,
+    icon: Radar,
     title: "Câmeras 360°",
     desc: "Cobertura ampla com redução real de pontos cegos.",
   },

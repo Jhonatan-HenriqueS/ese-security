@@ -34,14 +34,21 @@ const slides: Slide[] = [
 
 export function RotatingShowcase() {
   const [index, setIndex] = useState(0);
+  const [cycleKey, setCycleKey] = useState(0);
 
   useEffect(() => {
-    const timer = window.setInterval(() => {
+    const timer = window.setTimeout(() => {
       setIndex((current) => (current + 1) % slides.length);
+      setCycleKey((current) => current + 1);
     }, SLIDE_MS);
 
-    return () => window.clearInterval(timer);
-  }, []);
+    return () => window.clearTimeout(timer);
+  }, [index, cycleKey]);
+
+  const handleSelectSlide = (slideIndex: number) => {
+    setIndex(slideIndex);
+    setCycleKey((current) => current + 1);
+  };
 
   const active = slides[index];
 
@@ -119,11 +126,11 @@ export function RotatingShowcase() {
                       role="tab"
                       aria-selected={slideIndex === index}
                       aria-label={`Mostrar ${slide.title}`}
-                      onClick={() => setIndex(slideIndex)}
+                      onClick={() => handleSelectSlide(slideIndex)}
                       className="group relative h-1.5 flex-1 rounded-full bg-border overflow-hidden"
                     >
                       <span
-                        key={`${slideIndex}-${index}`}
+                        key={`${slideIndex}-${index}-${cycleKey}`}
                         className="absolute inset-y-0 left-0 bg-[image:var(--gradient-metal)] rounded-full"
                         style={{
                           width:
