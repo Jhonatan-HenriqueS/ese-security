@@ -122,19 +122,29 @@
   --gradient-benefit-card:
     radial-gradient(
       circle at top left,
-      color-mix(in oklab, oklch(0.64 0.07 245) 36%, transparent) 0%,
-      transparent 42%
+      color-mix(in oklab, rgb(30 58 138) 24%, transparent) 0%,
+      transparent 52%
+    ),
+    radial-gradient(
+      circle at top right,
+      color-mix(in oklab, rgb(30 58 138) 14%, transparent) 0%,
+      transparent 44%
     ),
     radial-gradient(
       circle at bottom right,
-      color-mix(in oklab, oklch(0.6 0.06 252) 30%, transparent) 0%,
-      transparent 48%
+      color-mix(in oklab, rgb(30 58 138) 20%, transparent) 0%,
+      transparent 54%
+    ),
+    radial-gradient(
+      circle at bottom left,
+      color-mix(in oklab, rgb(30 58 138) 10%, transparent) 0%,
+      transparent 42%
     ),
     linear-gradient(
-      145deg,
-      oklch(0.3 0.022 255) 0%,
-      oklch(0.25 0.02 257) 52%,
-      oklch(0.33 0.026 246) 100%
+      180deg,
+      color-mix(in oklab, rgb(30 58 138) 7%, white) 0%,
+      color-mix(in oklab, rgb(30 58 138) 12%, white) 52%,
+      color-mix(in oklab, rgb(30 58 138) 16%, white) 100%
     );
 
   /* Sombras tecnológicas (espelhadas) */

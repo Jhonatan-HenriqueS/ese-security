@@ -52,7 +52,7 @@ export function Plan() {
             />
 
             <div className="relative grid grid-cols-1 lg:grid-cols-5 gap-0">
-              <header className="lg:col-span-2 p-8 sm:p-10 lg:p-12 border-b lg:border-b-0 lg:border-r border-border bg-secondary/40">
+              <header className="lg:col-span-2 border-b border-sky-100/80 bg-benefit-card p-8 sm:p-10 lg:border-r lg:border-b-0 lg:p-12">
                 <span className="inline-flex items-center gap-2 rounded-full bg-white border border-border px-3 py-1 text-xs font-medium text-muted-foreground shadow-card">
                   <Sparkles
                     className="h-3.5 w-3.5 text-[var(--graphite)]"
