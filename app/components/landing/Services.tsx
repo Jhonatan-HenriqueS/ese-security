@@ -33,7 +33,7 @@ const services = [
   {
     icon: Cpu,
     tag: "Rastreamento & Segurança",
-    title: "Controle inteligente da palma da mão",
+    title: "Controle inteligente na palma da mão",
     highlight: "instalação especializada",
     items: [
       "Integração com app e smartphone",
