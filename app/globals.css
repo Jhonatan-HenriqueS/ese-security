@@ -145,6 +145,12 @@
     0 1px 2px oklch(0 0 0 / 0.04), 0 8px 24px -12px oklch(0 0 0 / 0.08);
   --shadow-card-hover:
     0 1px 2px oklch(0 0 0 / 0.06), 0 18px 40px -14px oklch(0 0 0 / 0.16);
+  --shadow-showcase-metal:
+    0 0 0 1px color-mix(in oklab, white 78%, var(--steel) 22%),
+    0 0 0 2px color-mix(in oklab, oklch(0.9 0.025 220) 36%, transparent),
+    0 24px 52px -22px color-mix(in oklab, var(--steel) 72%, transparent),
+    0 0 76px -18px color-mix(in oklab, oklch(0.82 0.03 225) 88%, transparent),
+    0 0 120px -42px color-mix(in oklab, oklch(0.78 0.025 230) 72%, transparent);
   --shadow-whatsapp: 0 10px 24px -10px
     color-mix(in oklab, var(--whatsapp) 55%, transparent);
 
@@ -211,6 +217,9 @@
   }
   .shadow-card-hover {
     box-shadow: var(--shadow-card-hover);
+  }
+  .shadow-showcase-metal {
+    box-shadow: var(--shadow-showcase-metal);
   }
   .shadow-whatsapp {
     box-shadow: var(--shadow-whatsapp);

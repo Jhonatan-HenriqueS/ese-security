@@ -84,7 +84,7 @@ export function RotatingShowcase() {
         </Reveal>
 
         <Reveal direction="up" delay={0.1}>
-          <div className="rounded-3xl border border-border bg-secondary/70 p-3 shadow-card sm:p-5">
+          <div className="rounded-3xl border border-white/70 bg-secondary/70 p-3 shadow-showcase-metal sm:p-5">
             <figure className="grid grid-cols-1 lg:grid-cols-5 gap-5 lg:gap-8 items-center">
               <button
                 type="button"
