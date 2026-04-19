@@ -6,7 +6,7 @@ import camera from "@/assets/camera-seguranca.jpg";
 import rastreamento from "@/assets/rastreamento.webp";
 import { Reveal } from "./Reveal";
 
-const SLIDE_MS = 3000;
+const SLIDE_MS = 5000;
 
 interface Slide {
   image: StaticImageData;
