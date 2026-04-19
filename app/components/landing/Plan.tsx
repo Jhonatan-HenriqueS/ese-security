@@ -9,6 +9,7 @@ const benefits = [
   "Plataforma web + aplicativo mobile",
   "Localização em tempo real e histórico de rotas",
   "Alertas de velocidade, desvio e movimentação",
+  "Suporte humanizado via WhatsApp",
   "Suporte técnico especializado",
   "Integração com câmeras e automações ESE",
   "Instalação profissional",

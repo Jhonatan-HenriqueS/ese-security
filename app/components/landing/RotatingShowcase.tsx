@@ -50,6 +50,11 @@ export function RotatingShowcase() {
     setCycleKey((current) => current + 1);
   };
 
+  const handleAdvanceSlide = () => {
+    setIndex((current) => (current + 1) % slides.length);
+    setCycleKey((current) => current + 1);
+  };
+
   const active = slides[index];
 
   return (
@@ -63,7 +68,8 @@ export function RotatingShowcase() {
             id="showcase-heading"
             className="font-display text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight"
           >
-            Tecnologia <span className="text-metal">visível</span> em ação
+            <span className="text-blue-900">Tecnologia</span>{" "}
+            <span className="text-metal">visível</span> em ação
           </h2>
           <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
             Conheça os pilares da ESE: monitoramento por câmeras e rastreamento
@@ -72,9 +78,14 @@ export function RotatingShowcase() {
         </Reveal>
 
         <Reveal direction="up" delay={0.1}>
-          <div className="rounded-3xl bg-secondary/70 p-3 sm:p-5 shadow-card border border-border">
+          <div className="rounded-3xl border border-border bg-secondary/70 p-3 shadow-card sm:p-5">
             <figure className="grid grid-cols-1 lg:grid-cols-5 gap-5 lg:gap-8 items-center">
-              <div className="lg:col-span-3 relative aspect-[16/10] overflow-hidden rounded-2xl bg-muted">
+              <button
+                type="button"
+                onClick={handleAdvanceSlide}
+                aria-label="Mostrar próxima imagem"
+                className="lg:col-span-3 relative aspect-[16/10] overflow-hidden rounded-2xl bg-muted cursor-pointer"
+              >
                 <div
                   key={active.title}
                   className="absolute inset-0"
@@ -95,7 +106,7 @@ export function RotatingShowcase() {
                   aria-hidden
                   className="absolute inset-0 bg-gradient-to-t from-black/15 via-transparent to-transparent pointer-events-none"
                 />
-              </div>
+              </button>
 
               <figcaption className="lg:col-span-2 px-2 sm:px-4 pb-2">
                 <div

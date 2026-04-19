@@ -15,7 +15,7 @@ const items = [
   {
     icon: BellRing,
     title: "Relatórios e alertas",
-    desc: "Acompanhamento inteligente com relatórios detalhando trajetos, velocidade, paradas e entre diversas funcionalidades.",
+    desc: "Acompanhamento inteligente com relatórios detalhando trajetos, velocidade, paradas e entre outras diversas funcionalidades.",
   },
   {
     icon: Camera,
