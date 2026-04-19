@@ -21,14 +21,14 @@ const slides: Slide[] = [
     alt: "Câmera de segurança IP de alta definição instalada em parede",
     title: "Câmeras de Segurança",
     description:
-      "Videovigilância em alta definição, com acesso remoto pelo aplicativo e armazenamento em nuvem.",
+      "Videovigilância em alta definição. Controle todas as câmeras com acesso remoto pelo aplicativo e armazenamento em nuvem.",
   },
   {
     image: rastreamento,
     alt: "Cidade noturna com vários prédios e uma ilustração de vários pontos marcados no mapa representando o rastreamento",
     title: "Rastreamento inteligente",
     description:
-      "Tenha total controle via satélite com nosso sistema de rastreamento via aplicativo.",
+      "Tenha controle via satélite de seus veículos. Tenha acesso a rotas, velocidade, histórico de trajetos e alertas de desvios.",
   },
 ];
 
@@ -68,13 +68,19 @@ export function RotatingShowcase() {
             id="showcase-heading"
             className="font-display text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight"
           >
-            <span className="text-blue-900">Tecnologia</span>{" "}
-            <span className="text-metal">visível</span> em ação
+            <span className="text-metal">Concheça os </span>{" "}
+            <span className="text-blue-900">principais</span> {""}
+            <span className="text-metal">serviços</span>{" "}
           </h2>
+          {/*
           <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
-            Conheça os pilares da ESE: monitoramento por câmeras e rastreamento
-            inteligente. Tenha acesso ao seu sistema em qualquer lugar.
+            <strong className="text-foreground">
+              Conheça os pilares da ESE:
+            </strong>{" "}
+            Monitoramento por câmeras e rastreamento inteligente. Tenha acesso
+            ao seu sistema em qualquer lugar.
           </p>
+          */}
         </Reveal>
 
         <Reveal direction="up" delay={0.1}>

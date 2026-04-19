@@ -64,14 +64,22 @@ export function Benefits() {
               delay={i * 0.04}
               className="h-full list-none"
             >
-              <article className="group h-full rounded-2xl border border-border bg-white p-6 shadow-card transition-all duration-300 hover:scale-[1.025] hover:shadow-card-hover hover:bg-secondary/60">
-                <div className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-[image:var(--gradient-metal)] text-primary-foreground shadow-mirror">
+              <article className="group relative h-full overflow-hidden rounded-2xl border border-white/10 bg-benefit-card p-6 text-white shadow-card transition-all duration-300 hover:scale-[1.025] hover:shadow-card-hover hover:brightness-110">
+                <div
+                  aria-hidden
+                  className="pointer-events-none absolute inset-0 opacity-70"
+                  style={{
+                    backgroundImage:
+                      "linear-gradient(180deg, color-mix(in oklab, white 8%, transparent), transparent 22%, transparent 78%, color-mix(in oklab, oklch(0.58 0.05 245) 18%, transparent))",
+                  }}
+                />
+                <div className="relative inline-flex h-11 w-11 items-center justify-center rounded-xl border border-white/12 bg-white/8 text-white shadow-[0_12px_30px_-16px_color-mix(in_oklab,oklch(0.58_0.05_245)_55%,transparent)] backdrop-blur-[2px]">
                   <it.icon className="h-5 w-5" aria-hidden />
                 </div>
-                <h3 className="mt-5 font-display text-lg font-semibold leading-tight">
+                <h3 className="relative mt-5 font-display text-lg font-semibold leading-tight text-white">
                   {it.title}
                 </h3>
-                <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
+                <p className="relative mt-2 text-sm leading-relaxed text-white/76">
                   {it.desc}
                 </p>
               </article>
