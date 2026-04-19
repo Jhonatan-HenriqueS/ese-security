@@ -28,7 +28,7 @@ const slides: Slide[] = [
     alt: "Cidade noturna com vários prédios e uma ilustração de vários pontos marcados no mapa representando o rastreamento",
     title: "Rastreamento inteligente",
     description:
-      "Tenha total controle via satélite com nosso sistema de rastreamento via aplicativo. Tenha controle na palma da mão.",
+      "Tenha total controle via satélite com nosso sistema de rastreamento via aplicativo.",
   },
 ];
 
