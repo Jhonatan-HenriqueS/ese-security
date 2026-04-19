@@ -14,7 +14,7 @@ export function Hero() {
     >
       <div aria-hidden className="absolute inset-0 grid-bg opacity-70" />
 
-      <div className="relative mx-auto max-w-5xl px-2 sm:px-6 lg:px-8 text-center">
+      <div className="relative mx-auto max-w-5xl px-3 sm:px-6 lg:px-8 text-center">
         <Reveal direction="up" delay={0.1}>
           <header>
             <h1

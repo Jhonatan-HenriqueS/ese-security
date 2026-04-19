@@ -13,7 +13,7 @@ const services = [
       "Câmeras 360° com cobertura ampla",
       "Armazenamento em nuvem",
       "Ideal para residências, empresas, garagens, pátios e frotas",
-      "Aplicativo próprio para monitoramento.",
+      "Aplicativo próprio para monitoramento",
     ],
   },
   {
@@ -27,7 +27,7 @@ const services = [
       "Histórico completo de percurso",
       "Alertas de velocidade e desvio de rota",
       "Veículos leves, pesados, motos e máquinas agrícolas",
-      "Aplicativo próprio para visualizar localização.",
+      "Aplicativo próprio para visualizar localização",
     ],
   },
   {

@@ -21,7 +21,7 @@ export function Header() {
   return (
     <header
       className={cn(
-        "fixed top-0 inset-x-0 z-50 transition-all duration-300",
+        "sticky top-0 z-50 transition-all ",
         scrolled
           ? "bg-white/70 backdrop-blur-xl border-b border-border/60 shadow-[0_1px_0_0_color-mix(in_oklab,var(--primary)_8%,transparent)]"
           : "bg-transparent",
@@ -39,9 +39,9 @@ export function Header() {
           <Image
             src={logo}
             alt="Logo ESE — Segurança e Rastreamento"
-            width={1}
-            height={1}
-            className="h-13 w-13 object-contain drop-shadow-sm"
+            width={90}
+            height={90}
+            className=" object-contain drop-shadow-sm"
           />
         </a>
 
