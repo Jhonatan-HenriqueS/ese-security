@@ -29,7 +29,7 @@ export function Header() {
     >
       <nav
         aria-label="Navegação principal"
-        className="mx-auto max-w-7xl px-7 h-16 flex items-center justify-between"
+        className="mx-auto max-w-7xl px-4 h-16 flex items-center justify-between"
       >
         <a
           href="#topo"
@@ -39,8 +39,8 @@ export function Header() {
           <Image
             src={logo}
             alt="Logo ESE — Segurança e Rastreamento"
-            width={90}
-            height={90}
+            width={80}
+            height={80}
             className=" object-contain drop-shadow-sm"
           />
         </a>
