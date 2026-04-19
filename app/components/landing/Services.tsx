@@ -62,7 +62,10 @@ export function Services() {
             className="mt-3 font-display text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight"
           >
             Soluções <span className="text-metal">completas</span> para{" "}
-            <span className="text-blue-900">proteger</span> {""}
+            <span className="text-blue-900 [text-shadow:0_0_18px_color-mix(in_oklab,rgb(30_58_138)_42%,transparent),0_0_34px_color-mix(in_oklab,rgb(30_58_138)_22%,transparent)]">
+              proteger
+            </span>{" "}
+            {""}
             você
           </h2>
         </Reveal>

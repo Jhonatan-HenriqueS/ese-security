@@ -50,7 +50,11 @@ export function Benefits() {
             id="benefits-heading"
             className="mt-3 font-display text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight"
           >
-            Tudo que sua <span className="text-blue-900"> segurança </span>
+            Tudo que sua{" "}
+            <span className="text-blue-900 [text-shadow:0_0_18px_color-mix(in_oklab,rgb(30_58_138)_42%,transparent),0_0_34px_color-mix(in_oklab,rgb(30_58_138)_22%,transparent)]">
+              {" "}
+              segurança{" "}
+            </span>
             precisa em <span className="text-metal">um só lugar</span>
           </h2>
         </Reveal>

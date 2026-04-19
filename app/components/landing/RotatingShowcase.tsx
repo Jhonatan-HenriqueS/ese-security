@@ -69,7 +69,10 @@ export function RotatingShowcase() {
             className="font-display text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight"
           >
             <span className="text-metal">Concheça os </span>{" "}
-            <span className="text-blue-900">principais</span> {""}
+            <span className="text-blue-900 [text-shadow:0_0_18px_color-mix(in_oklab,rgb(30_58_138)_42%,transparent),0_0_34px_color-mix(in_oklab,rgb(30_58_138)_22%,transparent)]">
+              principais
+            </span>{" "}
+            {""}
             <span className="text-metal">serviços</span>{" "}
           </h2>
           {/*

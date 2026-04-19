@@ -19,14 +19,21 @@ export function Hero() {
           <header>
             <h1
               id="hero-heading"
-              className="mt-6 font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1.05] tracking-tight"
+              className="mt-6 font-display text-4xl sm:text-5xl lg:text-6xl font-semibold leading-[1.05] tracking-tight"
             >
               <span className="text-metal">Segurança</span>,{" "}
               <span className="text-metal">controle</span> e{" "}
               <span className="text-metal">tecnologia</span>
               <br className="hidden sm:block" /> que{" "}
-              <span className="text-blue-900"> protegem</span> o que mais{" "}
-              <span className="text-blue-900"> importa</span>
+              <span className="text-blue-900 [text-shadow:0_0_18px_color-mix(in_oklab,rgb(30_58_138)_42%,transparent),0_0_34px_color-mix(in_oklab,rgb(30_58_138)_22%,transparent)]">
+                {" "}
+                protegem
+              </span>{" "}
+              o que mais{" "}
+              <span className="text-blue-900 [text-shadow:0_0_18px_color-mix(in_oklab,rgb(30_58_138)_42%,transparent),0_0_34px_color-mix(in_oklab,rgb(30_58_138)_22%,transparent)]">
+                {" "}
+                importa
+              </span>
             </h1>
           </header>
         </Reveal>

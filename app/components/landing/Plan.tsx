@@ -32,8 +32,14 @@ export function Plan() {
             className="mt-3 font-display text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight"
           >
             Uma solução <span className="text-metal">completa</span> por um
-            <span className="text-blue-900"> valor</span> que cabe no{" "}
-            <span className="text-blue-900">bolso</span>
+            <span className="text-blue-900 [text-shadow:0_0_18px_color-mix(in_oklab,rgb(30_58_138)_42%,transparent),0_0_34px_color-mix(in_oklab,rgb(30_58_138)_22%,transparent)]">
+              {" "}
+              valor
+            </span>{" "}
+            que cabe no{" "}
+            <span className="text-blue-900 [text-shadow:0_0_18px_color-mix(in_oklab,rgb(30_58_138)_42%,transparent),0_0_34px_color-mix(in_oklab,rgb(30_58_138)_22%,transparent)]">
+              bolso
+            </span>
           </h2>
         </Reveal>
 
