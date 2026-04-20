@@ -35,7 +35,7 @@ const benefitCategories = [
   {
     id: "cameras",
     title: "Câmeras",
-    description: "Monitoramento visual com cobertura ampla e acesso remoto.",
+    description: "Tenha acesso remoto em tempo real.",
     items: [
       {
         icon: Camera,
