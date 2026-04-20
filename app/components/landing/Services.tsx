@@ -26,7 +26,7 @@ const services = [
       "Localização em tempo real",
       "Histórico completo de percurso",
       "Alertas de velocidade e desvio de rota",
-      "Controle ligada e desligada",
+      "Controle a ligada e desligada",
       "Aplicativo próprio para visualizar localização",
     ],
   },
