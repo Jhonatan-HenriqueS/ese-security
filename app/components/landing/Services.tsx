@@ -79,7 +79,7 @@ export function Services() {
               delay={i * 0.08}
               className="h-full list-none"
             >
-              <article className="group relative h-full overflow-hidden rounded-3xl border border-border p-7 shadow-card transition-all duration-300 hover:scale-[1.015] shadow-card-hover bg-[color-mix(in_oklab,rgb(30_58_138)_6%,white)]">
+              <article className="group relative h-full overflow-hidden rounded-3xl border border-border bg-white p-7 shadow-card transition-all duration-300 hover:scale-[1.015] shadow-card-hover hover:bg-[color-mix(in_oklab,rgb(30_58_138)_6%,white)]">
                 <div
                   aria-hidden
                   className="absolute -top-24 -right-24 h-56 w-56 rounded-full opacity-30 blur-3xl"
