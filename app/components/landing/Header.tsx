@@ -29,7 +29,7 @@ export function Header() {
     >
       <nav
         aria-label="Navegação principal"
-        className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-3 px-4 sm:px-6 lg:px-8"
+        className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-3 px-6 sm:px-6 lg:px-8"
       >
         <a
           href="#topo"
