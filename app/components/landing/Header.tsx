@@ -21,27 +21,28 @@ export function Header() {
   return (
     <header
       className={cn(
-        "sticky top-0 z-50 transition-all ",
+        "fixed left-0 top-0 z-50 w-dvw overflow-x-clip pt-[env(safe-area-inset-top)] transition-all",
         scrolled
-          ? "bg-white/70 backdrop-blur-xl border-b border-border/60 shadow-[0_1px_0_0_color-mix(in_oklab,var(--primary)_8%,transparent)]"
-          : "bg-transparent",
+          ? "bg-white/85 backdrop-blur-xl border-b border-border/60 shadow-[0_1px_0_0_color-mix(in_oklab,var(--primary)_8%,transparent)]"
+          : "bg-white/70 backdrop-blur-xl",
       )}
     >
       <nav
         aria-label="Navegação principal"
-        className="mx-auto max-w-7xl px-4 h-16 flex items-center justify-between"
+        className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-3 px-4 sm:px-6 lg:px-8"
       >
         <a
           href="#topo"
-          className="flex items-center gap-2.5"
+          className="flex h-12 w-12 shrink-0 items-center justify-center"
           aria-label="ESE — Início"
         >
           <Image
             src={logo}
             alt="Logo ESE — Segurança e Rastreamento"
-            width={80}
-            height={80}
-            className=" object-contain drop-shadow-sm"
+            width={64}
+            height={64}
+            priority
+            className="h-12 w-12 object-contain drop-shadow-sm"
           />
         </a>
 
@@ -49,7 +50,7 @@ export function Header() {
           href={WHATSAPP_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 rounded-full bg-[var(--whatsapp)] text-[var(--whatsapp-foreground)] px-4 sm:px-5 h-10 text-sm font-medium shadow-whatsapp hover:scale-[1.03] active:scale-[0.98] transition-transform"
+          className="inline-flex h-11 max-w-[calc(100dvw_-_5.5rem)] shrink-0 items-center justify-center gap-2 rounded-full bg-[var(--whatsapp)] px-3 text-sm font-medium text-[var(--whatsapp-foreground)] shadow-whatsapp transition-transform hover:scale-[1.03] active:scale-[0.98] sm:px-5"
           aria-label="Falar com a ESE no WhatsApp"
         >
           <Image
@@ -57,10 +58,10 @@ export function Header() {
             alt="WhatsApp Logo"
             width={1}
             height={1}
-            className="h-10 w-10 shrink-0 object-contain"
+            className="h-7 w-7 shrink-0 object-contain"
           />
-          <span className="hidden sm:inline">WhatsApp</span>
-          <span className="sm:hidden">Fale conosco</span>
+          <span className="hidden whitespace-nowrap sm:inline">WhatsApp</span>
+          <span className="whitespace-nowrap sm:hidden">Fale conosco</span>
         </a>
       </nav>
     </header>
