@@ -50,7 +50,7 @@ export function Header() {
           href={WHATSAPP_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex h-11 max-w-[calc(100vw-5.5rem)] shrink-0 items-center justify-center rounded-full bg-[var(--whatsapp)] px-2 text-sm font-medium text-[var(--whatsapp-foreground)] shadow-whatsapp transition-transform hover:scale-[1.03] active:scale-[0.98] sm:px-5"
+          className="inline-flex h-11 max-w-[calc(100vw-5.5rem)] shrink-0 items-center justify-center gap-2 rounded-full bg-[var(--whatsapp)] px-3 text-sm font-medium text-[var(--whatsapp-foreground)] shadow-whatsapp transition-transform hover:scale-[1.03] active:scale-[0.98] sm:px-5"
           aria-label="Falar com a ESE no WhatsApp"
         >
           <Image
