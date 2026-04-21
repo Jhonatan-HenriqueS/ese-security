@@ -1,41 +1,9 @@
 import { Reveal } from "./Reveal";
-import {
-  Camera,
-  Cpu,
-  CloudUpload,
-  Smartphone,
-  BellRing,
-  Radar,
-  MapPinned,
-} from "./Icons";
+import { Camera, CloudUpload, Radar } from "./Icons";
 
 const benefitCategories = [
   {
-    id: "rastreamento",
-    title: "Rastreamento",
-    description: "Localização, rotas e controle em tempo real.",
-    items: [
-      {
-        icon: Cpu,
-        title: "Rastreamento via chip e satelital",
-        desc: "Monitoramento em tempo real, histórico de rotas, alta precisão e cobertura nacional. Tenha tudo isso integrado .",
-      },
-      {
-        icon: Smartphone,
-        title: "Plataforma + aplicativo",
-        desc: "Painel web, acesso mobile, notificações e gestão simplificada da sua frota e de suas câmeras.",
-      },
-      {
-        icon: BellRing,
-        title: "Relatórios e alertas",
-        desc: "Acompanhamento inteligente com relatórios detalhando trajetos, velocidade, paradas e entre outras diversas funcionalidades.",
-      },
-    ],
-  },
-  {
     id: "cameras",
-    title: "Câmeras",
-    description: "Tenha acesso remoto em tempo real.",
     items: [
       {
         icon: Camera,
@@ -50,7 +18,7 @@ const benefitCategories = [
       {
         icon: CloudUpload,
         title: "Armazenamento em nuvem",
-        desc: "Gravações seguras e acesso rápido às evidências quando você precisar.",
+        desc: "Gravações seguras e acesso rápido às evidências quando você precisar, tudo em um único aplicativo.",
       },
     ],
   },
@@ -66,43 +34,23 @@ export function Benefits() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal direction="up" className="text-center max-w-2xl mx-auto mb-14">
           <span className="text-xs uppercase tracking-[0.22em] text-muted-foreground">
-            Benefícios
+            Câmeras ESE
           </span>
           <h2
             id="benefits-heading"
             className="mt-3 font-display text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight"
           >
-            Tudo que sua{" "}
+            Câmeras para{""}
             <span className="text-blue-900 [text-shadow:0_0_18px_color-mix(in_oklab,rgb(30_58_138)_42%,transparent),0_0_34px_color-mix(in_oklab,rgb(30_58_138)_22%,transparent)]">
-              {" "}
-              segurança{" "}
-            </span>
-            precisa em <span className="text-metal">um só lugar</span>
+              {""} monitorar
+            </span>{" "}
+            com <span className="text-metal">mais controle</span>
           </h2>
         </Reveal>
 
         <div className="space-y-14">
           {benefitCategories.map((category, categoryIndex) => (
-            <section
-              key={category.id}
-              aria-labelledby={`benefits-${category.id}-heading`}
-            >
-              <Reveal
-                direction="up"
-                delay={categoryIndex * 0.04}
-                className="mb-5"
-              >
-                <h3
-                  id={`benefits-${category.id}-heading`}
-                  className="mt-2 font-display text-2xl font-semibold tracking-tight text-blue-900 [text-shadow:0_0_18px_color-mix(in_oklab,rgb(30_58_138)_42%,transparent),0_0_34px_color-mix(in_oklab,rgb(30_58_138)_22%,transparent)]"
-                >
-                  {category.title}
-                </h3>
-                <p className="mt-2 max-w-2xl text-sm text-muted-foreground">
-                  {category.description}
-                </p>
-              </Reveal>
-
+            <section key={category.id} aria-label="Recursos de câmeras ESE">
               <ul className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
                 {category.items.map((it, itemIndex) => (
                   <Reveal

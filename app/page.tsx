@@ -7,6 +7,7 @@ import { Hero } from "@/components/landing/Hero";
 import { Plan } from "@/components/landing/Plan";
 import { RotatingShowcase } from "@/components/landing/RotatingShowcase";
 import { Services } from "@/components/landing/Services";
+import { TrackingMonitoring } from "@/components/landing/TrackingMonitoring";
 
 const SITE_TITLE =
   "ESE | Rastreamento Veicular, Câmeras de Segurança e Automação Inteligente";
@@ -87,8 +88,9 @@ export default function HomePage() {
         <Hero />
         <RotatingShowcase />
         <Banner />
-        <Benefits />
+        <TrackingMonitoring />
         <Services />
+        <Benefits />
         <Plan />
       </main>
       <Footer />

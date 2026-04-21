@@ -3,20 +3,6 @@ import { Camera, Check, Cpu, MapPinned } from "./Icons";
 
 const services = [
   {
-    icon: Camera,
-    tag: "Câmeras",
-    title: "Videovigilância de alta performance",
-    highlight: "monitoramento mais completo",
-    items: [
-      "Instalação de câmeras IP, analógicas e HD",
-      "Acesso remoto via aplicativo",
-      "Câmeras 360° com cobertura ampla",
-      "Armazenamento em nuvem",
-      "Ideal para residências, empresas, garagens, pátios e frotas",
-      "Aplicativo próprio para monitoramento",
-    ],
-  },
-  {
     icon: MapPinned,
     tag: "Rastreamento",
     title: "Rastreio em tempo real",
@@ -28,6 +14,20 @@ const services = [
       "Alertas de velocidade e desvio de rota",
       "Controle a ligada e desligada",
       "Aplicativo próprio para visualizar localização",
+    ],
+  },
+  {
+    icon: Camera,
+    tag: "Câmeras",
+    title: "Videovigilância de alta performance",
+    highlight: "monitoramento mais completo",
+    items: [
+      "Instalação de câmeras IP, analógicas e HD",
+      "Acesso remoto via aplicativo",
+      "Câmeras 360° com cobertura ampla",
+      "Armazenamento em nuvem",
+      "Ideal para residências, empresas, garagens, pátios e frotas",
+      "Aplicativo próprio para monitoramento",
     ],
   },
   {

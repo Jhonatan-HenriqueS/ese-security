@@ -12,6 +12,7 @@ const benefits = [
   "Suporte humanizado via WhatsApp",
   "Suporte técnico especializado",
   "Integração com câmeras e automações ESE",
+  "Tenha acesso as suas câmeras ao vivo",
   "Instalação profissional",
 ];
 
