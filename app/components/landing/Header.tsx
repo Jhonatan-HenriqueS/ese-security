@@ -21,7 +21,7 @@ export function Header() {
   return (
     <header
       className={cn(
-        "fixed left-0 top-0 z-50 w-dvw overflow-x-clip pt-[env(safe-area-inset-top)] transition-all",
+        "fixed left-0 top-0 z-50 w-dvw overflow-x-clip pt-[max(env(safe-area-inset-top),1.25rem)] transition-all sm:pt-[env(safe-area-inset-top)]",
         scrolled
           ? "bg-white/85 backdrop-blur-xl border-b border-border/60 shadow-[0_1px_0_0_color-mix(in_oklab,var(--primary)_8%,transparent)]"
           : "bg-white/70 backdrop-blur-xl",
