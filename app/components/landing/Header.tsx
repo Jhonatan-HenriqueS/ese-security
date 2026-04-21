@@ -21,10 +21,7 @@ export function Header() {
   return (
     <header
       className={cn(
-        "fixed inset-x-0 top-0 z-50 pt-[env(safe-area-inset-top)] transition-all",
-        scrolled
-          ? "bg-white/85 backdrop-blur-xl border-b border-border/60 shadow-[0_1px_0_0_color-mix(in_oklab,var(--primary)_8%,transparent)]"
-          : "bg-white/70 backdrop-blur-xl",
+        "fixed inset-x-0 top-0 z-50 pt-[env(safe-area-inset-top)] transition-all bg-white/85 backdrop-blur-xl border-b border-border/60 shadow-[0_1px_0_0_color-mix(in_oklab,var(--primary)_8%,transparent)]",
       )}
     >
       <nav
