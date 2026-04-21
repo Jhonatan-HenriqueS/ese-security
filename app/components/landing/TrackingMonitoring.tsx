@@ -88,9 +88,6 @@ export function TrackingMonitoring() {
 
               <div className="lg:col-span-3">
                 <div className="border-b border-sky-100/80 bg-benefit-card p-7 sm:p-9 lg:p-10">
-                  <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-[image:var(--gradient-metal)] text-primary-foreground shadow-mirror">
-                    <Cpu className="h-5 w-5" aria-hidden />
-                  </div>
                   <h3 className="mt-5 font-display text-2xl font-semibold leading-tight sm:text-3xl">
                     Rastreamento profissional para mais{" "}
                     <span className="text-blue-900 [text-shadow:0_0_18px_color-mix(in_oklab,rgb(30_58_138)_42%,transparent),0_0_34px_color-mix(in_oklab,rgb(30_58_138)_22%,transparent)]">
