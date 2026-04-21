@@ -21,7 +21,7 @@ export function Header() {
   return (
     <header
       className={cn(
-        "fixed left-0 top-0 z-50 w-dvw overflow-x-clip pt-[max(env(safe-area-inset-top),1.25rem)] transition-all sm:pt-[env(safe-area-inset-top)]",
+        "fixed inset-x-0 top-0 z-50 pt-[env(safe-area-inset-top)] transition-all",
         scrolled
           ? "bg-white/85 backdrop-blur-xl border-b border-border/60 shadow-[0_1px_0_0_color-mix(in_oklab,var(--primary)_8%,transparent)]"
           : "bg-white/70 backdrop-blur-xl",
@@ -33,16 +33,16 @@ export function Header() {
       >
         <a
           href="#topo"
-          className="flex h-12 w-12 shrink-0 items-center justify-center"
+          className="flex shrink-0 items-center justify-center"
           aria-label="ESE — Início"
         >
           <Image
             src={logo}
             alt="Logo ESE — Segurança e Rastreamento"
-            width={64}
-            height={64}
+            width={80}
+            height={80}
             priority
-            className="h-12 w-12 object-contain drop-shadow-sm"
+            className="object-contain drop-shadow-sm"
           />
         </a>
 
@@ -50,15 +50,15 @@ export function Header() {
           href={WHATSAPP_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex h-11 max-w-[calc(100dvw_-_5.5rem)] shrink-0 items-center justify-center gap-2 rounded-full bg-[var(--whatsapp)] px-3 text-sm font-medium text-[var(--whatsapp-foreground)] shadow-whatsapp transition-transform hover:scale-[1.03] active:scale-[0.98] sm:px-5"
+          className="inline-flex h-11 max-w-[calc(100vw-5.5rem)] shrink-0 items-center justify-center rounded-full bg-[var(--whatsapp)] px-2 text-sm font-medium text-[var(--whatsapp-foreground)] shadow-whatsapp transition-transform hover:scale-[1.03] active:scale-[0.98] sm:px-5"
           aria-label="Falar com a ESE no WhatsApp"
         >
           <Image
             src={MsgLogo}
             alt="WhatsApp Logo"
-            width={1}
-            height={1}
-            className="h-7 w-7 shrink-0 object-contain"
+            width={40}
+            height={40}
+            className="shrink-0 object-contain"
           />
           <span className="hidden whitespace-nowrap sm:inline">WhatsApp</span>
           <span className="whitespace-nowrap sm:hidden">Fale conosco</span>
