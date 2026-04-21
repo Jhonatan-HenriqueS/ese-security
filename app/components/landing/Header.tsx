@@ -21,12 +21,12 @@ export function Header() {
   return (
     <header
       className={cn(
-        "fixed inset-x-0 top-0 z-50 pt-[env(safe-area-inset-top)] transition-all bg-white/85 backdrop-blur-xl border-b border-border/60 shadow-[0_1px_0_0_color-mix(in_oklab,var(--primary)_8%,transparent)]",
+        "fixed inset-x-0 top-0 z-50 transition-all bg-white/85 backdrop-blur-xl border-b border-border/60 shadow-[0_1px_0_0_color-mix(in_oklab,var(--primary)_8%,transparent)]",
       )}
     >
       <nav
         aria-label="Navegação principal"
-        className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-3 px-4 sm:px-6 lg:px-8"
+        className="flex h-16 items-center justify-around gap-3 sm:px-6 lg:px-8"
       >
         <a
           href="#topo"
@@ -47,7 +47,7 @@ export function Header() {
           href={WHATSAPP_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex h-11 mr-5 max-w-[calc(100vw-5.5rem)] shrink-0 items-center justify-center gap-2 rounded-full bg-[var(--whatsapp)] px-3 text-sm font-medium text-[var(--whatsapp-foreground)] shadow-whatsapp transition-transform hover:scale-[1.03] active:scale-[0.98] sm:px-5"
+          className="inline-flex h-11 max-w-[calc(100vw-5.5rem)] shrink-0 items-center justify-center gap-2 rounded-full bg-[var(--whatsapp)] px-3 text-sm font-medium text-[var(--whatsapp-foreground)] shadow-whatsapp transition-transform hover:scale-[1.03] active:scale-[0.98] sm:px-5"
           aria-label="Falar com a ESE no WhatsApp"
         >
           <Image
