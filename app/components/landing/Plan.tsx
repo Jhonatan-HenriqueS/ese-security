@@ -9,11 +9,10 @@ const benefits = [
   "Plataforma web + aplicativo mobile",
   "Localização em tempo real e histórico de rotas",
   "Alertas de velocidade, desvio e movimentação",
+  "Proteção confiável para seu patrimônio e operação",
   "Suporte humanizado via WhatsApp",
   "Suporte técnico especializado",
-  "Integração com câmeras e automações ESE",
-  "Tenha acesso as suas câmeras ao vivo",
-  "Instalação profissional",
+  ,
 ];
 
 export function Plan() {

@@ -90,7 +90,9 @@ export default function HomePage() {
         <Banner />
         <TrackingMonitoring />
         <Services />
+        {/*
         <Benefits />
+       */}
         <Plan />
       </main>
       <Footer />

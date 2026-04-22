@@ -16,6 +16,7 @@ interface Slide {
 }
 
 const slides: Slide[] = [
+  /*
   {
     image: camera,
     alt: "Câmera de segurança IP de alta definição instalada em parede",
@@ -23,6 +24,7 @@ const slides: Slide[] = [
     description:
       "Videovigilância em alta definição. Controle todas as câmeras com acesso remoto pelo aplicativo e armazenamento em nuvem.",
   },
+*/
   {
     image: rastreamento,
     alt: "Cidade noturna com vários prédios e uma ilustração de vários pontos marcados no mapa representando o rastreamento",
@@ -33,6 +35,7 @@ const slides: Slide[] = [
 ];
 
 export function RotatingShowcase() {
+  /*
   const [index, setIndex] = useState(0);
   const [cycleKey, setCycleKey] = useState(0);
 
@@ -56,6 +59,7 @@ export function RotatingShowcase() {
   };
 
   const active = slides[index];
+ */
 
   return (
     <section
@@ -91,12 +95,12 @@ export function RotatingShowcase() {
             <figure className="grid grid-cols-1 lg:grid-cols-5 gap-5 lg:gap-8 items-center">
               <button
                 type="button"
-                onClick={handleAdvanceSlide}
+                //onClick={handleAdvanceSlide}
                 aria-label="Mostrar próxima imagem"
                 className="lg:col-span-3 relative aspect-[16/10] overflow-hidden rounded-2xl bg-muted cursor-pointer"
               >
                 <div
-                  key={active.title}
+                  // key={active.title}
                   className="absolute inset-0"
                   style={{
                     animation:
@@ -104,8 +108,10 @@ export function RotatingShowcase() {
                   }}
                 >
                   <Image
-                    src={active.image}
-                    alt={active.alt}
+                    src={rastreamento}
+                    //src={active.image}
+                    //alt={active.alt}
+                    alt=""
                     fill
                     sizes="(min-width: 1024px) 60vw, 100vw"
                     className="object-cover"
@@ -119,7 +125,7 @@ export function RotatingShowcase() {
 
               <figcaption className="lg:col-span-2 px-2 sm:px-4 pb-2">
                 <div
-                  key={active.title}
+                  //key={active.title}
                   className="will-change-transform"
                   style={{ animation: "fadeUp 500ms ease-out both" }}
                 >
@@ -127,13 +133,20 @@ export function RotatingShowcase() {
                     ESE Solutions
                   </span>
                   <h3 className="mt-2 font-display text-2xl sm:text-3xl font-semibold">
-                    <span className="text-metal">{active.title}</span>
+                    <span className="text-metal">
+                      {/*{active.title}*/}
+                      Rastreamento inteligente
+                    </span>
                   </h3>
                   <p className="mt-3 text-muted-foreground leading-relaxed">
-                    {active.description}
+                    {/* {active.description}*/}
+                    Tenha controle via satélite de seus veículos. Tenha acesso a
+                    rotas, velocidade, histórico de trajetos e alertas de
+                    desvios.
                   </p>
                 </div>
 
+                {/*
                 <div
                   className="mt-6 flex gap-2"
                   role="tablist"
@@ -168,6 +181,7 @@ export function RotatingShowcase() {
                     </button>
                   ))}
                 </div>
+               */}
               </figcaption>
             </figure>
           </div>

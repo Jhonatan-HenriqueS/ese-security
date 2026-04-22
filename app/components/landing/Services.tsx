@@ -1,5 +1,5 @@
 import { Reveal } from "./Reveal";
-import { Camera, Check, Cpu, MapPinned } from "./Icons";
+import { Check, Cpu, MapPinned } from "./Icons";
 
 const services = [
   {
@@ -16,6 +16,7 @@ const services = [
       "Aplicativo próprio para visualizar localização",
     ],
   },
+  /*
   {
     icon: Camera,
     tag: "Câmeras",
@@ -30,6 +31,7 @@ const services = [
       "Aplicativo próprio para monitoramento",
     ],
   },
+ */
   {
     icon: Cpu,
     tag: "Rastreamento & Segurança",
@@ -70,14 +72,14 @@ export function Services() {
           </h2>
         </Reveal>
 
-        <ul className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+        <ul className="grid grid-cols-[repeat(auto-fit,minmax(min(100%,20rem),24rem))] justify-center gap-12">
           {services.map((s, i) => (
             <Reveal
               as="li"
               key={s.tag}
               direction="up"
               delay={i * 0.08}
-              className="h-full list-none"
+              className="h-full w-full list-none"
             >
               <article className="group relative h-full overflow-hidden rounded-3xl border border-border bg-white p-7 shadow-card transition-all duration-300 hover:scale-[1.015] shadow-card-hover hover:bg-[color-mix(in_oklab,rgb(30_58_138)_6%,white)]">
                 <div
