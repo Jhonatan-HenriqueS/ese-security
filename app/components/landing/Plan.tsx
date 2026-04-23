@@ -9,7 +9,7 @@ const benefits = [
   "Plataforma web + aplicativo mobile",
   "Localização em tempo real e histórico de rotas",
   "Alertas de velocidade, desvio e movimentação",
-  "Proteção confiável para seu patrimônio e operação",
+  "Proteção confiável para seu patrimônio e operaçãoa",
   "Suporte humanizado via WhatsApp",
   "Suporte técnico especializado",
   ,
